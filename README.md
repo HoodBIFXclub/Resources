@@ -1,2 +1,124 @@
 # Resources
 Start here for a list of resources that the Hood College Bioinformatics Club has Compiled
+
+These web pages are intended to give some starting points and reference links to bioinformatics students. It is part of website maintained by the Hood College Bioinformatics club. Contributors are so far Eckart Bindewald, Miranda Darby and Conor Jenkins.
+
+# The R Programming Language
+
+The R programming language was developed by Robert Gentleman and Ross Ihaka at the University of Auckland, New Zealand, as a free version of the language `S`. The `S` language was developed by John Chambers and others since 1976 (then at AT&T Bell Labs). Together with Python, R is one of the most popular programming languages for data analysis, statistics and bioinformatics.
+
+## Obtaining R
+
+* Official installation instructions at: <https://cran.r-project.org/>
+* Installation of RStudio: <https://www.rstudio.com/products/rstudio/>
+* The "R Companion": <https://rcompanion.org/rcompanion/a_05.html>
+* Official web site on R installation and administration: <https://cran.r-project.org/doc/manuals/r-release/R-admin.html>
+
+## Learn R Interactively with R package `swirl`
+
+You can use an R tutorial that guides you through beginning to intermediate concepts within the R console. Simply install R package `swirl` from within an R session like so:
+```
+install.packages("swirl")
+```
+You can launch the R tutorial with the `swirl()` commands:
+```
+library(swirl)
+swirl()
+```
+More information about `swirl` can be found at <https://github.com/swirldev/swirl>
+
+
+## Other Resources for Getting Started with R
+
+* Getting Started with R from the R Studio web site at <https://support.rstudio.com/hc/en-us/articles/201141096-Getting-Started-with-R>
+* The Quick-R web site from Rob Kabacoff at <https://www.statmethods.net/>
+
+* An R tutorial posted on Kaggle: <https://www.kaggle.com/rtatman/getting-started-in-r-first-steps>
+
+
+## Resources for Experienced R Users
+
+* The official R project web site: <https://www.r-project.org>
+* The website of the "tidyverse", a set of R packages fostering a clean and modern programming style for data science: <https://www.tidyverse.org>
+* Creating R packages and using the fabulous `devtools` package is explained in Hadley Wickham's book "R Packages": <http://r-pkgs.had.co.nz>
+
+## R Markdown
+
+R markdown is an effective way for mixing programming code with plain document text and images:
+
+* <https://rmarkdown.rstudio.com/>
+* R Markdown "Cheatsheet": <https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf>
+
+# Bioconductor
+
+Bioconductor is a separate repository for compatible R packages that are geared towards analysis of biological data.
+
+* Official web site: <https://www.bioconductor.org/>
+* Links to Bioconductor courses and tutorials: <https://bioconductor.org/help/publications/>
+
+
+# Getting Started with Python
+
+Python and R are both excellent programming languages for data scientists. It is safe to say that one can recommend learning at least the fundamentals of both of them for anyone interested in analyzing scientific data.
+
+Some resources are:
+
+* Getting with started with Python: <https://www.python.org/about/gettingstarted/>
+* Official web site: <https://www.python.org>
+* The Python Crash Course Book: <https://nostarch.com/pythoncrashcourse>
+
+
+# Bioinformatics Portals
+
+## NCBI: National Center for Biotechnology Information
+
+* Homepage: <https://www.ncbi.nlm.nih.gov>
+* Access publications via PubMed: <https://www.ncbi.nlm.nih.gov/pubmed/>
+* Sequence searches with BLAST: <https://blast.ncbi.nlm.nih.gov/Blast.cgi>
+
+## European Bioinformatics Institute
+
+* Homepage: <https://www.ebi.ac.uk/>
+* Curated genomics data at ENSEMBL: <http://useast.ensembl.org/index.html>
+* Expression Atlas: Gene expression data at <https://www.ebi.ac.uk/gxa/home>
+
+## UCSC Genome Browser
+
+The UCSC genome browser facilitates exploring and downloading a plethora of genomics data:
+
+* Homepage: <https://genome.ucsc.edu/>
+* Browse genome data: <https://genome.ucsc.edu/cgi-bin/hgGateway>
+* Specify and download bulk data: <https://genome.ucsc.edu/cgi-bin/hgTables>
+* Access to bulk data via FTP with `ftp hgdownload.soe.ucsc.edu`
+
+# Linux
+
+Linux and shell scripting tutorial and resources: <http://linuxcommand.org/index.php>
+
+
+
+# Other Programming Languages
+
+Even though R and Python are the most common languages for scientific data processing, a variety of other languages remain relevant and important. An overview over currently popular programming languages can be found at:
+
+* TIOBE Programming Language Index: <https://www.tiobe.com/tiobe-index/>
+* PYPL PopularitY of Programming Languages: <http://pypl.github.io/PYPL.html>
+* Rosetta Code: A comparison of implementations in *many* different languages: <http://rosettacode.org>
+* Comparison of programming languages at <https://en.wikipedia.org/wiki/Comparison_of_programming_languages>
+
+Often, programming languages can be invoked from each other in order to facilitate certain functionalities. For example, C/C++ is well-suited for high-performance computing. Via the `Rcpp` R package C/C++ can be incorporated into an R package for obtaining the "best of both worlds" of flexibility of R and execution speed of C/C++.
+
+Many niches exist that may make less popular programming languages attractive frameworks.
+
+* JavaScript: if the requirement is to run a program within a web browser, one cannot avoid JavaScript or a language based on it. Every smartphone browser has a JavaScript engine, it is therefore one of the most widespread programming languages. Confusingly, it does not have an "official" web site! ECMAScript is an attempt to standardize JavaScript derived technologies:  <https://en.wikipedia.org/wiki/JavaScript>,<https://en.wikipedia.org/wiki/ECMAScript>. It may suffice to treat ECMAScript and JavaScript as synonyms, but the relationship between these programming standards is a complex one as described [here](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5).
+* C/C++ A standard for creating high performance compiled code. <http://www.cplusplus.com/>, <https://en.wikipedia.org/wiki/C%2B%2B>
+* Java: <https://www.java.com>. Even though it has lost a bit of its popularity it remains highly important due to its Java Virtual Machine (JVM) being the basis of the Android smartphones and countless other projects such as the [Spark](http://spark.apache.org/) framework for high performance computing. There are many interesting new JVM-based programming languages such as [Clojure](https://en.wikipedia.org/wiki/Clojure),[Groovy](http://groovy-lang.org/),[Kotlin](https://kotlinlang.org/) and [Scala](https://www.scala-lang.org).
+* An entirely different paradigm is utilized by logic programming languages like [Prolog](https://en.wikipedia.org/wiki/Prolog)
+
+# Machine Learning
+
+A section on the exciting world of machine learning and artifial intelligence remains to be added!
+
+# Software
+
+Github has an excellent [Student Developer Pack](https://education.github.com/pack) containing valuable resources for development and project management.
